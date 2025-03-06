@@ -1,0 +1,35 @@
+@startuml
+skinparam monochrome true
+
+actor User
+rectangle "Input" as input {
+  component "rST Files" as rst
+  component "Configuration (conf.py)" as config
+}
+
+rectangle "Processing" as processing {
+  component "Docutils Parser" as docutils
+  component "Sphinx Core" as sphinx
+  component "Extensions" as extensions
+  component "HTML Builder" as html_builder
+  component "Themes/Templates" as themes
+}
+
+rectangle "Output" as output {
+  component "HTML Files" as html
+}
+
+User -> rst : Writes
+User -> config : Configures
+rst --> docutils : Input
+config --> docutils : Settings
+docutils --> sphinx : AST
+config --> sphinx : Settings
+sphinx --> extensions : Modified AST
+extensions --> sphinx : Enhanced AST
+sphinx --> html_builder : Final AST
+themes --> html_builder : Templates/CSS
+html_builder --> html : Generates
+html --> User : Output
+
+@enduml

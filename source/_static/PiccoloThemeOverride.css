@@ -1,0 +1,35 @@
+
+:root {
+    --mainNavColor: #348ad1;
+    --sidebarColor: #f8f8ff;
+    --inlineCodeBackgroundColor: rgba(15, 15, 15, 0.14);
+}
+
+:root[data-mode="darkest"] {
+    --mainBackgroundColor: black;
+    --sidebarColor: black;
+    --codeBackgroundColor: black;
+    --inlineCodeBackgroundColor: rgba(255, 255, 255, 0.5);
+}
+
+:root[data-mode="dark"] .highlight{
+    --mainBackgroundColor: black;
+    --sidebarColor: black;
+    --codeBackgroundColor: #1d1d1c;
+    --inlineCodeBackgroundColor: rgba(255, 255, 255, 0.5);
+}
+
+div.document div.documentwrapper {
+    max-width: 55rem;
+}
+
+div.document div.highlight {
+    border-radius: 0.0rem;
+    border-left: 2px double rgba(128, 128, 128, 40%);
+    /* background-color: var(--mainBackgroundColor); */
+    background-color: cornsilk;
+}
+
+.hll {
+    background-color: deepskyblue;
+}

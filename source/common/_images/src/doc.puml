@@ -1,0 +1,31 @@
+@startmindmap
+<style>
+mindmapDiagram {
+    :depth(2) {
+      BackGroundColor gold
+    }
+    :depth(1) {
+      BackGroundColor lightgreen
+    }
+}
+</style>
+
+*[#yellow] This document
+** Structure
+*** Tree/Hierarchy
+****_ reasons:
+*****_ to navigate (page navigation)
+*****_ <s>and</s> find information <s>quickly</s> (mindmap information)
+
+** Techniques
+*** Mindmap
+****_ **def**: visual representation showing relation among \n \
+individual pieces of info.
+****_ helps with understanding of complex topics
+****_ e.g this diagram
+*** Chunking
+****_ method that involves breaking down info \n \
+into smaller, more manageable pieces
+****_ e.g. 8005555674 -> 800-555-5674
+*** Mnemonic
+@endmindmap

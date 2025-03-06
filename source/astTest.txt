@@ -1,0 +1,7 @@
+<document>
+    <paragraph>
+        Using rST syntax, one can create a
+        <strong>
+            bold text
+            
+        

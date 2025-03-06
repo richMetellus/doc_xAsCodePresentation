@@ -1,0 +1,57 @@
+@startuml
+title Dev App
+
+skinparam packageBackgroundColor LightSkyBlue
+skinparam packageBorderColor Black
+skinparam fileBackgroundColor Moccasin
+skinparam fileBorderColor Black
+skinparam rectangleBackgroundColor LightGreen
+skinparam rectangleBorderColor Black
+skinparam defaultTextAlignment center
+
+file "Source Files\n*.cc/*.hpp,*.c/*.h" as source #moccasin
+file "Assembly Files\n*.s" as assembly #moccasin
+file "Executable" as executable #008A00
+file "External Libs\n*.a" as extLibs #moccasin
+file "Linker File" as linker_file #moccasin
+
+
+
+package "GNU Toolchain" {
+    
+    package "Compiler (gcc)" #lightblue {
+        package "Assembler (as)" #white {
+            rectangle "Assembler" #lightgreen
+        }
+        rectangle "Compiler" #lightgreen
+    }
+    
+
+    file "Object Files\n*.o" as object1 #moccasin
+    file "Object Files\n*.o" as object2 #moccasin
+    file "Std Library Files\n*.a" as stdlib #moccasin
+    
+    source -right-> "Compiler"
+    assembly --> "Assembler"
+    "Compiler" -right-> object1
+    "Assembler" --> object2
+    
+    package "Linker (ld)" #lightblue {
+        rectangle "Linker" #lightgreen
+        rectangle "Locator" #lightgreen
+    }
+    
+    file "Relocatable File" as reloc_file #moccasin
+    
+    object1 -down-|> "Linker"
+    object2 --> "Linker"
+    stdlib --> "Linker"
+    extLibs -down-|> "Linker"    
+    "Linker" --> reloc_file
+    reloc_file --> "Locator"
+    linker_file --> "Locator"
+    "Locator" --> executable
+
+}
+
+@enduml
