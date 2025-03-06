@@ -29,3 +29,11 @@ Once these two are install. To build the document you need to run the following 
     ```
 
 3. For live presentation: `make live-revealjs`
+
+## Acknowledgement
+
+This presentation is made possible thanks to the contribution of various developers
+to the Sphinx project ecosystem.
+
+* [sphinx-revealjs](https://github.com/attakei/sphinx-revealjs) by Attakei.
+* [Sphinx-contrib organization](https://github.com/sphinx-contrib)
