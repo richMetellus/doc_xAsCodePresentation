@@ -3,7 +3,7 @@ X As Code
 ##########
 
 :Author: Richelin Metellus
-:Date: 2025-03-04
+:Date: 2025-03-06
 :Version: 1.0
 
 Agenda 
@@ -15,6 +15,8 @@ Agenda
 * Case Studies and Examples
 * Benefits of Adopting such Framework
 
+..
+   https://cummins365-my.sharepoint.com/:p:/g/personal/ua199_cummins_com/EaaUWuAMIbhOvFCnVYikfpUBF7mXSUHZeH6AAokITExovw?e=ESpHha&CID=765F848C-C4F1-475D-81E4-5EF557B946D2&wdLOR=c40B14AF8-9851-42DE-9333-3E2FC9FBC3EF
 
 What Is X As Code 
 ******************
@@ -86,10 +88,10 @@ Typical C/C++ Application Dev
 .. revealjs-break::
    :data-auto-animate:
 
-* Complexity can add up fast
 * Multiple teams can be responsible for delivering different artifacts
-* Information sharing might not be optimized if the teams are siloed or 
-  got lost as team members leave
+* Complexity can add up very fast
+* **Information management might not be optimized if the teams are siloed or 
+  worst information got lost as team members leave or retire**
 
 
 Personal Motivation
@@ -179,16 +181,20 @@ Use Cases and Example
 
 * Technical documentation 
   
-  * Code 
+  * API documentation, User manuals, user guides 
   * Scientific research & publication
 
-* Static Websites Generation
+* Various formats: HTML (Static website), LaTeX, pdf, etc...
 * Internationalization of docs
 
 Example 1: This presentation 
 =============================
 
 .. revealjs-section::
+   :data-auto-animate:
+
+   
+.. revealjs-break::
    :data-auto-animate:
 
 .. code-block:: console
@@ -519,11 +525,12 @@ Markdown equivalent of the rST Syntax shown earlier
    :notitle:
    :data-transition: concave
 
-MyST Markdown Specific Syntax. Won't work with generic markdown parser.
+MyST Markdown Specific Syntax.
 
 .. literalinclude:: ./mdTest2.md 
    :language: markdown
 
+Won't work with generic markdown parser.
 
 Sphinx 
 ********
@@ -576,7 +583,7 @@ Benefits of X As Code
    3. **Version Control**
 
       .. 3. Allows tracking of changes over time, making it easier to understand 
-         the history and evolution of configurations and policies.
+         the history and evolution of configurations, and content.
 
    4. **Collaboration**
 
