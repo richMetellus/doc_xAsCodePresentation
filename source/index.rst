@@ -591,6 +591,15 @@ Benefits of X As Code
    
    #. **Searchability**
 
+.. revealjs-break::
+   :notitle:
+   :data-transition: concave
+
+Hopefully, you don't have to look like 
+this when looking for information:
+
+.. image:: common/_images/CharlieConspiracyMeme.jpg
+
 Alternatives
 **************
 
