@@ -166,7 +166,102 @@ Use the same principles of delivering software artifacts
 * Documentation and diagramming can be treated as code
 * When written in plaintext, the files can be version controlled.
 * Facilitate automation, consistency and collaboration
+
+.. revealjs-break::
+   :data-transition: concave
+   :notitle:
+
+.. image:: common/_images/EverythingAsCodeMeme_9ma9cb.jpg
+
+
+Use Cases and Example 
+***********************
+
+* Technical documentation 
   
+  * Code 
+  * Scientific research & publication
+
+* Static Websites Generation
+* Internationalization of docs
+
+Example 1: This presentation 
+=============================
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. code-block:: console
+
+   Believe it
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. code-block:: console
+
+   Believe it
+   OR
+
+.. revealjs-break::
+   :data-auto-animate:
+
+
+.. code-block:: console
+
+   Believe it
+   OR
+   Not
+
+.. revealjs-break::
+   :data-auto-animate:
+
+
+.. code-block:: console
+
+   Believe it
+   OR
+   Not
+   This presentation is purely written using
+
+.. revealjs-break::
+   :data-auto-animate:
+
+
+.. code-block:: console
+
+   Believe it
+   OR
+   Not
+   This presentation is purely written using
+   reStructuredText within a Sphinx project
+
+Example 2: Demo 
+===============
+
+Sphinx Project Template
+
+1. Download or Clone `Sphinx Doc Template`_
+#. Navigate to the project 
+#. Install dependencies & Activate the python virtual environments
+   
+   .. code-block:: console 
+      :linenos:
+
+      pipenv install
+      pipenv shell
+
+#. Build the project 
+
+   .. code-block:: console 
+
+      make livehtml
+
+Example 3: Case Study of Toradex Developer Doc 
+==================================================
+
+How Toradex leverage DaC using MDX?
+
 Tools and Technologies 
 ***********************
 
@@ -462,94 +557,6 @@ Sphinx
    Builders converts AST into the desired output format
 
    Themes enrich the visual appearance and structure the of the output
-
-Use Cases and Example 
-***********************
-
-* Technical documentation 
-  
-  * Code 
-  * Scientific research & publication
-
-* Static Websites Generation
-* Internationalization of docs
-
-Example 1: This presentation 
-=============================
-
-.. revealjs-section::
-   :data-auto-animate:
-
-.. code-block:: console
-
-   Believe it
-
-.. revealjs-break::
-   :data-auto-animate:
-
-.. code-block:: console
-
-   Believe it
-   OR
-
-.. revealjs-break::
-   :data-auto-animate:
-
-
-.. code-block:: console
-
-   Believe it
-   OR
-   Not
-
-.. revealjs-break::
-   :data-auto-animate:
-
-
-.. code-block:: console
-
-   Believe it
-   OR
-   Not
-   This presentation is purely written using
-
-.. revealjs-break::
-   :data-auto-animate:
-
-
-.. code-block:: console
-
-   Believe it
-   OR
-   Not
-   This presentation is purely written using
-   reStructuredText within a Sphinx project
-
-Example 2: Demo 
-===============
-
-Sphinx Project Template
-
-1. Download or Clone `Sphinx Doc Template`_
-#. Navigate to the project 
-#. Install dependencies & Activate the python virtual environments
-   
-   .. code-block:: console 
-      :linenos:
-
-      pipenv install
-      pipenv shell
-
-#. Build the project 
-
-   .. code-block:: console 
-
-      make livehtml
-
-Example 3: Case Study of Toradex Developer Doc 
-==================================================
-
-How Toradex leverage DaC using MDX?
 
 Benefits of X As Code
 ************************
