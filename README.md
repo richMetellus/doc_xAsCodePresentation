@@ -24,7 +24,6 @@ Once these two are install. To build the document you need to run the following 
    and then type the following command to build a live document
 
     ```python
-    playwright install
     make revealjs
     ```
 

@@ -13,12 +13,12 @@ myst-parser = "*"
 sphinx-autobuild = "*"
 # Extension
 sphinx-revealjs = "*"
-'sphinx-revealjs[screenshot]' = "*"
+# 'sphinx-revealjs[screenshot]' = "*"
 
 #useful packages
   # for rst to pdf svg converter
   # dependency of screenshot
-playwright = "*"
+# playwright = "*"
 svglib = "*"
 
 # Diagramming tool extensions

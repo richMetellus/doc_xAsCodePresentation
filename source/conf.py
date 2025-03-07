@@ -54,7 +54,7 @@ extensions = [
     'sphinxcontrib.plantuml',
     'sphinxcontrib.drawio',
     "sphinx_revealjs",
-    "sphinx_revealjs.ext.screenshot",
+    # "sphinx_revealjs.ext.screenshot",
     # 'sphinxcontrib.kroki'
 ]
 
